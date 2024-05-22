@@ -44,7 +44,7 @@ app.post("/contact", async (req, res) => {
 
     const transporter = nodemailer.createTransport({
       host: 'smtp.hostinger.com',
-      port: 587,
+      port: 465,
       secure: true,
       auth: {
         user: 'info@andhariabasu.com',
