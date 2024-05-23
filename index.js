@@ -3,7 +3,7 @@ const moment = require("moment");
 const nodemailer = require("nodemailer");
 const mongoose = require("mongoose");
 const ContactMail = require("./modals/ContactMail");
-const cors = requiew("cors")
+const cors = require("cors")
 
 const app = express();
 const port = 3000;
