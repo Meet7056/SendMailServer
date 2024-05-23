@@ -3,13 +3,14 @@ const moment = require("moment");
 const nodemailer = require("nodemailer");
 const mongoose = require("mongoose");
 const ContactMail = require("./modals/ContactMail");
+const cors = requiew("cors")
 
 const app = express();
 const port = 3000;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
-
+app.use(cors());
 // MongoDB connection
 const connectDB = async () => {
   try {
